@@ -28,7 +28,7 @@ class MessageStatsMod(loader.Module):
                 break
 
     async def statscmd(self, message: types.Message):
-        """Показывает статистику сообщений"""
+        """Показать статистику сообщений"""
         await utils.answer(message, f"<b>👺🔪Считаю сообщения...</b>")
         day_count = week_count = month_count = all_count = 0
         async for msg in self._client.iter_messages(message.to_id):
