@@ -11,7 +11,7 @@ class MessageStatsMod(loader.Module):
     """Показывает статистику сообщений в текущем чате"""
     strings = {"name": "MessageStats"}
 
-    def init(self):
+    def __init__(self):
         self.name = self.strings["name"]
         self._client = None
         self.today = datetime.datetime.now().date()
